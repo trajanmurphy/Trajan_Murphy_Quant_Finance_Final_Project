@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\input{macros}
+\title{Option Pricing For Weather-Based Derivatives}
+\author{Trajan Murphy}
+\date{\today}
+
+%\includeonly{Experimental Details/Experimental Results.tex}
+
+
+\begin{document}
+	\maketitle
+	
+	Weather-sensitive industries, such as air travel, agriculture, and tourism often incorporate weather-based derivatives into their models for option pricing. We consider a simple model, based on temperature derivatives, by following the thesis work of Gilbert, 2024 \cite{gibert2024monte}. We will first begin by modeling the temperature $T_t$ at time $t$, via an SPDE known as a \textit{mean-reverting OU Process}, or simply OU process. The OU process is given by
+	
+		\begin{equation} \label{Mean-reverting OU-Process}
+		dT_t = \kappa(\overline T_t - T_t) + \sigma_t dW_t
+	\end{equation}
+	
+	where 
+	
+	\begin{itemize}
+		\item $T_t$ = Temperature at time $t$
+		\item $\overline T_t$ = mean temperature at time $t$
+		\item $\kappa$ = ``constant"
+		\item $\sigma_t$ = volatility at time $t$
+		\item $W_t$ = Wiener process
+	\end{itemize}
+	
+	An explicit solution is given by the stochastic integral: 
+	
+	\begin{equation} \label{Explicit Solution}
+		T_t = \overline T_t + \exp \left( -\int_0^t \kappa du \right) \int_0^t \exp \left( \int_0^t \kappa du \right) \sigma_t dW_t.
+	\end{equation}
+	
+	$\overline T_t$ is typically estimated from historical data. In our simulation, we fit the daily dry bulb temperature recorded at the Boston Logan Airport in the year 2012, sourced from \cite{NCEI2026} to a quadratic model. Once we obtain $T_t$ we compute two different underlying indices based on the time of year: the \textit{Heating Degree Days} and \textit{Cooling Degree Days}, given respectively by 
+	
+	\begin{equation}
+		\begin{split}
+			CDD_n = (T_n - 65)^+
+			\\
+			HDD_n = (65 - T_n)^+
+		\end{split}
+	\end{equation}\\
+	
+	where $(\cdot)^+ = \max{\cdot, 0}$. Here $n$ is the \textit{discretized} time index. The HDD is used during the heating season (typically defined to be May 15-Oct 15), and the CDD is used during the cooling season (typically defined to be Nov 15-Mar 15). Once we have these sequences, the value of a call (respectively put) option at day $N$ is given by 
+	
+	\begin{equation} \label{Option Prices}
+		\begin{split}
+			\text{Call} &= \min \bset{\alpha \left( \left(\sum_{n=1}^N DD_n \right) - K_c \right)^+, C}
+			\\
+			\text{Put} &= \min \bset{\alpha \left(K_c - \left(\sum_{n=1}^N \right)   \right)^+, C}
+		\end{split}
+	\end{equation}
+	
+	where Let $K_c$ is the strike price, $\alpha$ is the payout rate, and $C$ is the cap price. Typical values of these constants are $2,500 \leq \alpha \leq 5,000$ and $500,000 \leq C \leq 1,000,000$. In our simulations we fix $\alpha = 2,500$, $C = 500,000$, and $K_C = 550$. 
+	
+	To produce our Monte-Carlo simulations of the daily call/put option prices, we do the following. We estimate the daily average temperature using trapezoidal integration on the hour-by-hour values. We fit the daily average temperature to a quadratic model. We compute the ACF, PACF, and QQ-plot of residuals to ensure normality and independence. We estimate $\sigma_t$ by using a monthly average and linearly interpolate to get daily values. We then simulate multiple $T_t$ series with $\kappa \equiv 1$ according to \eqref{Explicit Solution}. Finally, we compute call and put options based on modeled temperature according to \eqref{Option Prices}.
+	
+	\printbibliography
+\end{document}

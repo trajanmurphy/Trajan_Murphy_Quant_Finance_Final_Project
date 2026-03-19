@@ -1,0 +1,110 @@
+\usepackage{tikz-cd}
+
+
+%math symbols
+\usepackage{graphicx, amsmath, amssymb, longtable, mathtools, amsthm, polynom, mathrsfs, cancel}
+%\usepackage{enumitem}
+
+%\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\newcommand{\tabitem}{\textbullet~}
+\usepackage{url}
+\usepackage{breakcites}
+\usepackage{comment}
+\usepackage[table]{xcolor}
+\usepackage{booktabs} % Optional: for better looking horizontal lines
+
+%Bibtex
+\usepackage[backend=biber,style=alphabetic]{biblatex}
+\addbibresource{references.bib}
+%\usepackage[breaklinks]{hyperref}
+%\appto\bibfont{\setlength{\emergencystretch}{.1em}}
+
+
+%Theorem Like Environments
+
+%\newtheorem{theorem}{Theorem} 
+%\numberwithin{theorem}{section}
+
+
+
+
+%\newtheorem{definition}{Definition}
+%\numberwithin{definition}{section}
+
+\newtheorem{assumption}{Assumption}
+\numberwithin{assumption}{section}
+
+%\newtheorem{proposition}{Proposition}
+%\numberwithin{proposition}{section}
+
+%\newtheorem{remark}{Remark}
+%\numberwithin{remark}{section}
+
+%\newtheorem{corollary}{Corollary}
+%\numberwithin{corollary}{section}
+
+%\newtheorem{conjecture}{Conjecture}
+%\numberwithin{conjecture}{section}
+
+%\newtheorem{example}{Example}
+%\numberwithin{example}{section}
+
+
+%\usepackage{comment}
+%\renewenvironment{comment}{}{}
+\usepackage{algorithm}
+\usepackage{algpseudocode} 
+%\usepackage{algorithm2e}
+
+%Tabular packages
+\usepackage{multicol, multirow, array, tabularx, caption, float}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+%Tikz package
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{subcaption}
+
+%set margins
+
+
+
+%Common sets and symbols:
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\bigS}{\mathcal{S}}
+
+\newcommand{\Open}{\mathcal{O}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\Var}{\mathbf{Var}}
+\newcommand{\bset}[1]{\left \lbrace #1 \right \rbrace}
+\newcommand{\aset}[1]{\left \langle #1 \right \rangle}
+\newcommand{\mexists}{\; \exists \;}
+\newcommand{\mforall}{\; \forall \;}
+\newcommand{\cunion}[2]{\bigcup_{#1 = #2}^\infty}
+\newcommand{\cinter}[2]{\bigcap_{#1 = #2}^\infty}
+\newcommand{\csum}[2]{\sum_{#1 = #2}^\infty}
+\newcommand{\dist}{\mathrm{dist}}
+\newcommand{\Span}[1]{\mathrm{Span}\bset{#1}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\im}{\mathrm{im}}
+\newcommand{\D}{\displaystyle}
+\newcommand{\Cov}{\mathrm{Cov}} 
+\newcommand{\intp}[1] {\D \int_\Omega {#1 } \; d \mathbb P}
+\newcommand{\HS}{\mathrm{HS}}
+
+\newcommand{\NT}[2]{N_\mathbf{#1}^{\text{#2}}}
+\newcommand{\T}[2]{\mathcal T_\mathbf{#1}^{\text{#2}}}
+
+\newcommand{\bA}{\mathbf A}
+\newcommand{\bB}{\mathbf B}
+\newcommand{\CH}{\mathcal H}
+\newcommand{\Mres}{M_\text{res}}
+%\renewenvironment{comment}{}{}
+
+\newcommand{\globalLGheight}{0.23\textheight}
+\newcommand{\globalLGwidth}{0.87\textwidth}
