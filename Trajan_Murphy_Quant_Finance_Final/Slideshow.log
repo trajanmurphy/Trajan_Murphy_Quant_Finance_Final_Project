@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.7)  19 MAR 2026 18:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.7)  20 MAR 2026 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -952,7 +952,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'alphabetic.dbx' not found.
+Package biblatex Info: ... file 'alphabetic-verb.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count429
@@ -1062,6 +1062,11 @@ File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip22
 \c@smartand=\count505
 )
+Package biblatex Info: Trying to load bibliography style 'alphabetic-verb'...
+Package biblatex Info: ... file 'alphabetic-verb.bbx' found.
+
+(c:/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/alphabetic-verb.bbx
+File: alphabetic-verb.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
 
@@ -1074,22 +1079,21 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count506
 \c@bbx:relatedtotal=\count507
-))
-Package biblatex Info: Trying to load citation style 'alphabetic'...
-Package biblatex Info: ... file 'alphabetic.cbx' found.
+)))
+Package biblatex Info: Trying to load citation style 'alphabetic-verb'...
+Package biblatex Info: ... file 'alphabetic-verb.cbx' found.
 
-(c:/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
-File: alphabetic.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+(c:/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/alphabetic-verb.cbx
+File: alphabetic-verb.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
 Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\smartcites'.
+Package biblatex Info: Redefining '\textcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1510,28 +1514,16 @@ ut line 72.
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-
-LaTeX Warning: Citation 'gibert2024monte' on page 3 undefined on input line 72.
-
-
 [3
 
-]
+] [4
 
-LaTeX Warning: Citation 'gibert2024monte' on page 4 undefined on input line 97.
-
-
-[4
+] [5
 
 ]
 
-LaTeX Warning: Citation 'NCEI2026' on page 5 undefined on input line 112.
-
-[5
-
-]
-
-LaTeX Warning: Empty bibliography on input line 116.
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <8> not available
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 116.
 
 [6
 
@@ -1554,36 +1546,41 @@ L3 programming layer <2025-12-29>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `Slideshow.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Slideshow
-(biblatex)                and rerun LaTeX afterwards.
+Package rerunfilecheck Warning: File `Slideshow.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Slideshow.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  AEA4B6A8AE45636C75679C2F0DFA4493;93.
+
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'Slideshow.run.xml'.
 \openout1 = `Slideshow.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37068 strings out of 467538
- 743012 string characters out of 5423720
- 1552540 words of memory out of 5000000
- 65297 multiletter control sequences out of 15000+600000
- 635541 words of font info for 69 fonts, out of 8000000 for 9000
+ 37138 strings out of 467538
+ 745396 string characters out of 5423720
+ 1551689 words of memory out of 5000000
+ 65359 multiletter control sequences out of 15000+600000
+ 635773 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,123p,1186b,1355s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:
-/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2
-025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf
--dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/font
-s/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb>
-Output written on Slideshow.pdf (6 pages, 236022 bytes).
+ 128i,16n,123p,1186b,1447s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/te
+xlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive
+/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmssi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt8.pfb>
+Output written on Slideshow.pdf (6 pages, 243673 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 15 named destinations out of 1000 (max. 500000)
+ 299 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 18 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 

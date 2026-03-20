@@ -1,11 +1,15 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'Executive Summary.blg'
 [185] biber-MSWIN64:342> INFO - === 
-[242] Biber.pm:421> INFO - Reading 'Executive Summary.bcf'
-[426] Biber.pm:1002> INFO - Found 2 citekeys in bib section 0
-[450] Biber.pm:4487> INFO - Processing section 0
-[469] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
-[604] bibtex.pm:1713> INFO - LaTeX decoding ...
-[635] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[696] Utils.pm:479> ERROR - BibTeX subsystem: C:\Users\TRAJA_~1\AppData\Local\Temp\biber_tmp_ZUt8\33e59b5ca9ec342068223d604c3f8d55_17456.utf8, line 12, syntax error: found "year", expected end of entry ("}" or ")") (skipping to next "@")
-[696] Biber.pm:137> INFO - ERRORS: 1
+[246] Biber.pm:421> INFO - Reading 'Executive Summary.bcf'
+[435] Biber.pm:1002> INFO - Found 2 citekeys in bib section 0
+[456] Biber.pm:4487> INFO - Processing section 0
+[472] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[581] bibtex.pm:1713> INFO - LaTeX decoding ...
+[589] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[660] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[661] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[661] Biber.pm:4307> INFO - Sorting list 'anyt/global//global/global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[661] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[671] bbl.pm:676> INFO - Writing 'Executive Summary.bbl' with encoding 'UTF-8'
+[673] bbl.pm:779> INFO - Output to Executive Summary.bbl

@@ -1,11 +1,15 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'Slideshow.blg'
-[153] biber-MSWIN64:342> INFO - === 
-[207] Biber.pm:421> INFO - Reading 'Slideshow.bcf'
-[369] Biber.pm:1002> INFO - Found 2 citekeys in bib section 0
-[394] Biber.pm:4487> INFO - Processing section 0
-[418] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
-[507] bibtex.pm:1713> INFO - LaTeX decoding ...
-[516] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[578] Utils.pm:479> ERROR - BibTeX subsystem: C:\Users\TRAJA_~1\AppData\Local\Temp\biber_tmp_Su1b\33e59b5ca9ec342068223d604c3f8d55_16632.utf8, line 12, syntax error: found "year", expected end of entry ("}" or ")") (skipping to next "@")
-[578] Biber.pm:137> INFO - ERRORS: 1
+[173] biber-MSWIN64:342> INFO - === 
+[224] Biber.pm:421> INFO - Reading 'Slideshow.bcf'
+[368] Biber.pm:1002> INFO - Found 2 citekeys in bib section 0
+[387] Biber.pm:4487> INFO - Processing section 0
+[402] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[454] bibtex.pm:1713> INFO - LaTeX decoding ...
+[462] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[522] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[522] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[522] Biber.pm:4307> INFO - Sorting list 'anyt/global//global/global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[522] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[532] bbl.pm:676> INFO - Writing 'Slideshow.bbl' with encoding 'UTF-8'
+[533] bbl.pm:779> INFO - Output to Slideshow.bbl
