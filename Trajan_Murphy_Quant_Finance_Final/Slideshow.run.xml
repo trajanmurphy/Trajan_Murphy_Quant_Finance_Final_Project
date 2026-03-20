@@ -55,8 +55,7 @@
       <file>biblatex.def</file>
       <file>standard.bbx</file>
       <file>alphabetic.bbx</file>
-      <file>alphabetic-verb.bbx</file>
-      <file>alphabetic-verb.cbx</file>
+      <file>alphabetic.cbx</file>
       <file>biblatex.cfg</file>
       <file>english.lbx</file>
     </requires>

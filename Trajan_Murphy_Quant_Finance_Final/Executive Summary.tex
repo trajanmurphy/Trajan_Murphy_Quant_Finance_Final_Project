@@ -15,7 +15,7 @@
 	Weather-sensitive industries, such as air travel, agriculture, and tourism often incorporate weather-based derivatives into their models for option pricing. We consider a simple model, based on temperature derivatives, by following the thesis work of Gilbert, 2024 \cite{gibert2024monte}. We will first begin by modeling the temperature $T_t$ at time $t$, via an SPDE known as a \textit{mean-reverting OU Process}, or simply OU process. The OU process is given by
 	
 		\begin{equation} \label{Mean-reverting OU-Process}
-		dT_t = \kappa(\overline T_t - T_t) + \sigma_t dW_t
+		dT_t = \kappa(\overline T_t - T_t)dt + \sigma_t dW_t
 	\end{equation}
 	
 	where 

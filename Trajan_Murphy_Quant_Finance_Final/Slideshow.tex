@@ -55,7 +55,7 @@
 \begin{frame}{Ornstein–Uhlenbeck Process \cite{gibert2024monte}}
 	 Gauss-Markov process defined by SPDE:
 	\begin{block}{Mean-reverting OU-Process}
-		$$dT_t = \kappa(\overline T_t - T_t) + \sigma_t dW_t$$
+		$$dT_t = \kappa(\overline T_t - T_t)dt + \sigma_t dW_t$$
 	\end{block}
 	
 	\begin{itemize}
@@ -76,7 +76,7 @@
 	\begin{itemize}
 		\item $CDD_n = (T_n - 65)^+, \qquad n \in \text{Nov 15, ..., Mar 15}$
 		\item $HDD_n = (65 - T_n)^+, \qquad n \in \text{May 15, ..., Oct 15}$
-		\item $DD = \sum_{n \in \text{Season}} CDD_n $ (or $HDD_n$)
+		\item $DD_N = \sum_{n =1}^N CDD_n $ (or $HDD_n$)
 	
 	\end{itemize}
 	

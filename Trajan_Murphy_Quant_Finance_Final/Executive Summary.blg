@@ -1,11 +1,11 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'Executive Summary.blg'
-[144] biber-MSWIN64:342> INFO - === 
-[191] Biber.pm:421> INFO - Reading 'Executive Summary.bcf'
-[334] Biber.pm:1002> INFO - Found 2 citekeys in bib section 0
-[352] Biber.pm:4487> INFO - Processing section 0
-[367] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
-[441] bibtex.pm:1713> INFO - LaTeX decoding ...
-[450] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[500] Utils.pm:479> ERROR - BibTeX subsystem: C:\Users\TRAJA_~1\AppData\Local\Temp\biber_tmp_oK6y\33e59b5ca9ec342068223d604c3f8d55_24052.utf8, line 12, syntax error: found "year", expected end of entry ("}" or ")") (skipping to next "@")
-[496] Biber.pm:137> INFO - ERRORS: 1
+[185] biber-MSWIN64:342> INFO - === 
+[242] Biber.pm:421> INFO - Reading 'Executive Summary.bcf'
+[426] Biber.pm:1002> INFO - Found 2 citekeys in bib section 0
+[450] Biber.pm:4487> INFO - Processing section 0
+[469] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[604] bibtex.pm:1713> INFO - LaTeX decoding ...
+[635] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[696] Utils.pm:479> ERROR - BibTeX subsystem: C:\Users\TRAJA_~1\AppData\Local\Temp\biber_tmp_ZUt8\33e59b5ca9ec342068223d604c3f8d55_17456.utf8, line 12, syntax error: found "year", expected end of entry ("}" or ")") (skipping to next "@")
+[696] Biber.pm:137> INFO - ERRORS: 1
